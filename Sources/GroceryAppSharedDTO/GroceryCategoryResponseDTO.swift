@@ -13,7 +13,7 @@ public struct GroceryCategoryResponseDTO: Codable {
     public var colorCode: String
     public var items: [GroceryItemResponseDTO]
     
-    public init(id: UUID, title: String, colorCode: String, items: [GroceryItemResponseDTO]) {
+    public init(id: UUID, title: String, colorCode: String, items: [GroceryItemResponseDTO] = []) {
         self.id = id
         self.title = title
         self.colorCode = colorCode
